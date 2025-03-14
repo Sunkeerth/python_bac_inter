@@ -21,4 +21,6 @@ jobs:
           poetry install --no-root --with dev,test
           
       - name: Run tests
-        run: poetry run pytest -v
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$GITHUB_WORKSPACE
+          poetry run pytest -v tests/
