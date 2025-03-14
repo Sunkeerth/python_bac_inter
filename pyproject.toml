@@ -1,20 +1,19 @@
 [tool.poetry]
-name = "pubmed-fetcher"
+name = "python_bac_inter"
 version = "0.1.0"
-description = "PubMed paper fetcher with non-academic affiliation filtering"
-authors = ["Sunkeerth  sunkeerth123@gmail.com"]
-readme = "README.md"
+# ... other existing config ...
 
 [tool.poetry.dependencies]
 python = "^3.8"
 biopython = "^1.80"
 pandas = "^1.3.0"
-tqdm = "^4.66.0"
+
+[tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
 python-dotenv = "^1.0.0"
 
-[tool.poetry.scripts]
-get-papers-list = "pubmed_fetcher.cli:main"
+[tool.poetry.group.test.dependencies]
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
