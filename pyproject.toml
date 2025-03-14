@@ -2,7 +2,7 @@
 name = "python-bac-inter"  # Must be lowercase with hyphens
 version = "0.1.0"
 description = "PubMed paper fetcher with company affiliation filtering"  # Required
-authors = ["Your Name <your.email@example.com>"]  # Required
+authors = ["Sunkeerth <sunkeerth123@gmail.com>"]  # Required
 license = "MIT"
 readme = "README.md"
 
