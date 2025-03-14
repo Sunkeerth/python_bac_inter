@@ -1,7 +1,10 @@
 [tool.poetry]
-name = "python_bac_inter"
+name = "python-bac-inter"  # Must be lowercase with hyphens
 version = "0.1.0"
-# ... other existing config ...
+description = "PubMed paper fetcher with company affiliation filtering"  # Required
+authors = ["Your Name <your.email@example.com>"]  # Required
+license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -10,7 +13,6 @@ pandas = "^1.3.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
-python-dotenv = "^1.0.0"
 
 [tool.poetry.group.test.dependencies]
 pytest-cov = "^4.1.0"
